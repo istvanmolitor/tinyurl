@@ -1,0 +1,29 @@
+{
+    "name": "istvanmolitor/tinyurl",
+    "description": "TinyURL – URL shortener csomag",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Molitor István",
+            "email": "istvanmolitor@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Molitor\\Tinyurl\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Molitor\\Tinyurl\\Providers\\TinyurlServiceProvider"
+            ]
+        }
+    }
+}
