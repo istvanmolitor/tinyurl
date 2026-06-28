@@ -15,6 +15,9 @@ class TinyurlServiceProvider extends ServiceProvider
 
         $this->app->make(Router::class)
             ->group(['prefix' => 'api'], __DIR__.'/../routes/api.php');
+
+        $this->app->make(Router::class)
+            ->group(['middleware' => 'web'], __DIR__.'/../routes/web.php');
     }
 
     public function register(): void
